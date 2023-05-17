@@ -6,9 +6,8 @@ function clicked() {
     let selectedIds = [];
     for (let i = 0; i < selectedAssets.length; i++) {
         selectedIds.push(selectedAssets[i].id);
+        console.log("selected ", selectedAssets[i]);
     }
-    console.log('suup: ' + selectedAssets);
-    alert('selectedIds ' + selectedIds);
 }
 
 function App() {
