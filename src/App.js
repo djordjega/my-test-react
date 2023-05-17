@@ -8,6 +8,7 @@ function clicked() {
         selectedIds.push(selectedAssets[i].id);
     }
     console.log('suup: ' + selectedAssets);
+    alert('selectedIds ' + selectedIds);
 }
 
 function App() {
