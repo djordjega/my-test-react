@@ -1,16 +1,18 @@
 import './App.css';
-function clicked() {
-  alert("clicked");
-  let selectedAssets = window.parent.document.querySelectorAll('.asset-selected');
+
+function App() {
+
+  function clicked() {
+    alert("clicked");
+    let selectedAssets = window.parent.document.querySelectorAll('.asset-selected');
 
     let selectedIds = [];
     for (let i = 0; i < selectedAssets.length; i++) {
-        selectedIds.push(selectedAssets[i].id);
-        console.log("selected ", selectedAssets[i]);
+      selectedIds.push(selectedAssets[i].id);
+      console.log("selected ", selectedAssets[i]);
     }
-}
+  }
 
-function App() {
   return (
     <div className="App">
       <h1>React test</h1>
