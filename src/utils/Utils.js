@@ -7,11 +7,18 @@ function cLog(message, obj) {
 
 function initF() {
     cLog('init');
-    anotherF();
+    cLog('updating object utils');
+    this.objectOne.name = 'Djordje';
+    this.objectOne.age = '40';
 }
 
-function anotherF() {
-    cLog('another');
+let objectOne = {
+    name : "",
+    age : ""
 }
 
-export {cLog, initF};
+function setObjectOne(obj) {this.objectOne = obj;}
+function getObjectOne() {return this.objectOne;}
+
+
+export {cLog, initF, setObjectOne, getObjectOne};
