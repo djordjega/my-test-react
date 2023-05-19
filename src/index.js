@@ -12,15 +12,15 @@ function initF() {
   // let dseObjectId = window.dseObjectConfig.dseObject.instanceId;
   // console.log("dse object id: " + dseObjectId);
 
-  let dseObjectId_2 = window.parent.dseObjectConfig.dseObject.instanceId;
-  console.log("dse object id 2: " + dseObjectId_2);
+  // let dseObjectId_2 = window.parent.dseObjectConfig.dseObject.instanceId;
+  // console.log("dse object id 2: " + dseObjectId_2);
 
-  let selectedAssets = window.parent.document.querySelectorAll('.asset-selected');
-  let selectedIds = [];
-  for (let i = 0; i < selectedAssets.length; i++) {
-    selectedIds.push(selectedAssets[i].id);
-  }
-  console.log("selected ids: " + selectedIds);
+  // let selectedAssets = window.parent.document.querySelectorAll('.asset-selected');
+  // let selectedIds = [];
+  // for (let i = 0; i < selectedAssets.length; i++) {
+  //   selectedIds.push(selectedAssets[i].id);
+  // }
+  // console.log("selected ids: " + selectedIds);
 
 }
 
