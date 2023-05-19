@@ -1,24 +1,21 @@
-function cLog(message, obj) {
+import {setUser,getUser} from '../models/User';
+
+export function cLog(message, obj) {
     let separator = " > ";
     if (obj === undefined) { obj = ""; separator = "" };
     console.log("BRT-React: " + message + separator, obj);
 
 }
 
-function initF() {
+export function initF() {
     cLog('init');
-    cLog('updating object utils');
-    objectOne.name = 'Djordje';
-    objectOne.age = '40';
+
+    let user1 = {
+        name : "Djordje",
+        age : 40
+    }
+    cLog('reading object from utils 1', getUser());
+    cLog('setting user from utils', setUser(user1));
+    cLog('reading object from utils 2', getUser());
 }
 
-let objectOne = {
-    name : "",
-    age : ""
-}
-
-function setObjectOne(obj) {objectOne = obj;}
-function getObjectOne() {return objectOne;}
-
-
-export {cLog, initF, setObjectOne, getObjectOne};

@@ -1,12 +1,20 @@
 import './App.css';
-import {cLog, initF, setObjectOne, getObjectOne} from './utils/Utils';
+import { cLog } from './utils/Utils';
+import { setUser, getUser } from './models/User';
+
 
 function App() {
 
   function clicked() {
     cLog("clicked");
-    cLog('read object 2 from app', getObjectOne());
 
+    let user1 = {
+      name: "Suzana",
+      age: 32
+    }
+    cLog('reading object from app 1', getUser());
+    cLog('setting user from app', setUser(user1));
+    cLog('reading object from app 2', getUser());
 
     // let selectedAssets = window.parent.document.querySelectorAll('.asset-selected');
 
