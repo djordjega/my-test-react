@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 console.log("app loaded");
+initF();
 
 function initF() {
   console.log("initF...");
