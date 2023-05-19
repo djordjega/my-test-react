@@ -8,8 +8,8 @@ function cLog(message, obj) {
 function initF() {
     cLog('init');
     cLog('updating object utils');
-    this.objectOne.name = 'Djordje';
-    this.objectOne.age = '40';
+    objectOne.name = 'Djordje';
+    objectOne.age = '40';
 }
 
 let objectOne = {
