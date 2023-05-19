@@ -1,15 +1,16 @@
 import './App.css';
+import cLog from './utils/Utils';
 
 function App() {
 
   function clicked() {
-    alert("clicked");
+    cLog("clicked");
     let selectedAssets = window.parent.document.querySelectorAll('.asset-selected');
 
     let selectedIds = [];
     for (let i = 0; i < selectedAssets.length; i++) {
       selectedIds.push(selectedAssets[i].id);
-      console.log("selected ", selectedAssets[i]);
+      cLog("selected ", selectedAssets[i]);
     }
   }
 
