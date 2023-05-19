@@ -17,8 +17,8 @@ let objectOne = {
     age : ""
 }
 
-function setObjectOne(obj) {this.objectOne = obj;}
-function getObjectOne() {return this.objectOne;}
+function setObjectOne(obj) {objectOne = obj;}
+function getObjectOne() {return objectOne;}
 
 
 export {cLog, initF, setObjectOne, getObjectOne};
