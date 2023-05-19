@@ -9,8 +9,8 @@ initF();
 
 function initF() {
   console.log("initF...");
-  let dseObjectId = window.dseObjectConfig.dseObject.instanceId;
-  console.log("dse object id: " + dseObjectId);
+  // let dseObjectId = window.dseObjectConfig.dseObject.instanceId;
+  // console.log("dse object id: " + dseObjectId);
 
   let dseObjectId_2 = window.parent.dseObjectConfig.dseObject.instanceId;
   console.log("dse object id 2: " + dseObjectId_2);
