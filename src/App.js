@@ -1,5 +1,5 @@
 import './App.css';
-import cLog from './utils/Utils';
+import {cLog} from './utils/Utils';
 
 function App() {
 
