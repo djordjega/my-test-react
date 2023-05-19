@@ -7,6 +7,11 @@ function cLog(message, obj) {
 
 function initF() {
     cLog('init');
+    anotherF();
+}
+
+function anotherF() {
+    cLog('another');
 }
 
 export {cLog, initF};
