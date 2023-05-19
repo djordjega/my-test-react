@@ -4,9 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {cLog, initF} from './utils/Utils';
+import { getUser } from './models/User';
+
 
 cLog("app loaded");
-cLog('obj from index 1', getObjectOne());
+cLog('obj from index 1', getUser());
 initF();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
