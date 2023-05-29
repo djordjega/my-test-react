@@ -1,6 +1,8 @@
 import './App.css';
 import { cLog } from './utils/Utils';
 import { setUser, getUser } from './models/User';
+import BmButton from '@bm/core/target/basic/buttons/BmButton/BmButton';
+
 
 
 function App() {
@@ -29,6 +31,13 @@ function App() {
     <div className="App">
       <h1>Bulk Review - React Dev Test</h1>
       <button onClick={clicked}>Click me</button>
+      <BmButton
+        size={'small'}
+        onClick={() => { }}
+        data-test-id={`review${reviewId}openVersionsMenu`}
+      >
+        test
+      </BmButton>
     </div>
   );
 }
